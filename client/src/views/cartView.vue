@@ -7,7 +7,7 @@
                     <h2 class="font-semibold text-2xl">0 Items</h2>
                 </div>
                 <div class="flex mt-10 mb-5">
-                    <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
+                    <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Product</h3>
                     <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5">Quantity</h3>
                     <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5">Price</h3>
                     <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5">Total</h3>
