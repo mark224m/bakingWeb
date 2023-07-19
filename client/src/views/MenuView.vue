@@ -1,3 +1,11 @@
+<script setup>
+import { onMounted } from 'vue'
+import { initDrawers } from 'flowbite'
+
+onMounted(() => {
+    initDrawers();
+})
+</script>
 <template>
 <!-- drawer component -->
 <div id="drawer-example" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
@@ -85,7 +93,6 @@
 </template>
 
 <script>
-
 export default {
     data() {
         return {

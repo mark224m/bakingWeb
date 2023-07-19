@@ -1,3 +1,12 @@
+<script setup>
+import { onMounted } from 'vue'
+import { initCarousels } from 'flowbite'
+
+onMounted(() => {
+    initCarousels();
+})
+</script>
+
 <template>
   <div id="default-carousel" class="relative z-0 w-full mt-0" data-carousel="slide">
     <!-- Carousel wrapper -->
@@ -143,67 +152,3 @@
     </div>
   </footer>
 </template>
-<script setup>
-import { onMounted } from 'vue'
-import { Carousel } from 'flowbite'
-
-onMounted(() => {
-  const items = [
-    {
-      position: 0,
-      el: document.getElementById('carousel-item-1')
-    },
-    {
-      position: 1,
-      el: document.getElementById('carousel-item-2')
-    },
-    {
-      position: 2,
-      el: document.getElementById('carousel-item-3')
-    },
-    {
-      position: 3,
-      el: document.getElementById('carousel-item-4')
-    },
-  ];
-
-  const options = {
-    defaultPosition: 1,
-    interval: 3000,
-
-    indicators: {
-      activeClasses: 'bg-white dark:bg-gray-800',
-      inactiveClasses: 'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
-      items: [
-        {
-          position: 0,
-          el: document.getElementById('carousel-indicator-1')
-        },
-        {
-          position: 1,
-          el: document.getElementById('carousel-indicator-2')
-        },
-        {
-          position: 2,
-          el: document.getElementById('carousel-indicator-3')
-        },
-        {
-          position: 3,
-          el: document.getElementById('carousel-indicator-4')
-        },
-      ]
-    },
-
-  };
-
-  if (document.getElementById('carousel-item-1')) {
-    const carousel = new Carousel(items, options);
-    console.log("hello");
-
-    carousel.next();
-
-
-
-  }
-})
-</script>
